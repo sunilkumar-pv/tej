@@ -1,0 +1,73 @@
+<!-- <app-menu></app-menu> -->
+
+<!-- <app-page1></app-page1> -->
+
+
+<div id="container">    
+    <app-page2></app-page2>
+    <div id="content">
+        <div style="padding: 0px;">
+            <mat-toolbar  >  
+                <span class="spl"> openreach </span>
+                <span class="spacer"></span>
+                <span class="logout">John, Doe |  Admin </span> 
+                <a  href=""><i class="material-icons">power_settings_new</i></a>
+            </mat-toolbar>
+            <mat-drawer-container class="example-container" autosize>
+                <mat-drawer #drawer class="example-sidenav" mode="side">
+                  <p>Auto-resizing sidenav</p>
+                  <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+                  <button (click)="showFiller = !showFiller" mat-raised-button>
+                    Toggle extra text
+                  </button>
+                </mat-drawer>
+              
+                <div class="example-sidenav-content">
+                  <button type="button" mat-button (click)="drawer.toggle()">
+                    Toggle sidenav
+                  </button>
+                </div>
+              
+            </mat-drawer-container>
+              
+          <!-- <router-outlet></router-outlet> -->
+        </div>
+    </div>
+  </div>
+
+  <style>
+      .spacer { flex: 1 1 auto; }
+            mat-toolbar a {
+            display: inline-block;
+            
+            text-decoration: none;
+            margin: 0 10px;
+            }
+            mat-toolbar {
+            box-shadow: 2px 0 5px rgb(177, 176, 176);
+            }
+        .spl { font-family: inherit !important;  }
+        .logout { text-decoration: none;  font-weight: lighter; font-family: inherit !important;}
+        /* mat-toolbar a { color: white;} */
+        .example-container {
+  width: 100%;
+  height: 600px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.example-sidenav-content {
+  /* display: flex; */
+  height: 100%;
+  /* align-items: center;
+  justify-content: center; */
+}
+
+.example-sidenav {
+  padding: 20px;
+}
+
+
+  </style>
+
+
+ 

@@ -1,0 +1,40 @@
+
+    <!--  -->
+
+ 
+    <!--  -->
+ 
+
+<nav>
+    <ul>
+        <li>
+            <a  routerLink="" routerLinkActive="activated">
+               <i class="material-icons">arrow_forward</i>
+            </a>
+        </li>
+      <li>
+        <a routerLink="" routerLinkActive="activated"
+          [routerLinkActiveOptions]="{exact: true}" [class.activated]="currentUrl == '/'">
+          <i class="material-icons">account_tree</i>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/page2" routerLinkActive="activated"
+         [routerLinkActiveOptions]="{exact: true}" [class.activated]="currentUrl == '/page2'">
+          <i class="material-icons">share</i>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/page3" routerLinkActive="activated"
+         [routerLinkActiveOptions]="{exact: true}" [class.activated]="currentUrl == '/page3'">
+          <i class="material-icons">settings</i>
+        </a>
+      </li>  
+      <li>
+        <a routerLink="">
+          <i class="material-icons">person_outline</i>
+        </a>
+      </li>            
+    </ul>
+  </nav>
+

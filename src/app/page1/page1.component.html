@@ -1,0 +1,36 @@
+<mat-drawer-container class="outerWrapper" autosize>
+    <mat-drawer #drawer class="sidebar-Pannel" mode="side">
+      <!-- <p>Auto-resizing sidenav</p> -->
+      <!-- <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p> -->
+      <!-- <button (click)="showFiller = !showFiller" mat-raised-button>
+        Toggle extra text
+      </button> -->
+      <mat-nav-list>
+        <a mat-list-item routerLink="/"><span class="material-icons"> arrow_right </span>  Page 1</a> 
+        <mat-divider></mat-divider>
+        <a mat-list-item routerLink="/page2"><span class="material-icons"> arrow_right </span>  Page 2</a> 
+        <mat-divider></mat-divider>
+        <a mat-list-item routerLink="/page3"><span class="material-icons"> arrow_right </span> Page 3</a>
+        <mat-divider></mat-divider>
+      </mat-nav-list>
+
+
+
+    </mat-drawer>
+     <!--  -->
+    <mat-toolbar color="">
+        <button type="button" mat-button (click)="drawer.toggle()">
+            <span class="material-icons">arrow_forward</span>
+        </button>
+        <span>  openreach  </span>  
+        <span class="spacer"></span>
+        <span>John, Doe |  Admin </span> 
+        <a class="logout" href=""><i class="material-icons">power_settings_new</i></a>
+    </mat-toolbar>
+    <div class="inner-wrapper">
+      <!-- <button type="button" mat-button (click)="drawer.toggle()">Toggle </button> -->
+    </div>
+    <!-- <mat-toolbar class="footer">
+        <p>&copy; Copyrights @ 2020</p>
+    </mat-toolbar>   -->
+</mat-drawer-container>
